@@ -1,0 +1,186 @@
+#page-create-client {
+    display: flex;
+    min-height: 100vh;
+  
+    background-color: linear-gradient(329.54deg, #CA1D0D 0%, #D7220F 100%);
+    background: url('../../images/background.png')repeat;
+    animation: animation 180s linear infinite;
+}
+
+@keyframes animation {
+    100%{
+        background-position:+3000px 2500px;
+    }
+}
+  
+#page-create-client main {
+    flex: 1;
+}
+
+form.create-client-form {
+    width: 700px;
+    margin: 64px auto;
+
+    background: #B21100;
+    border: none;
+    border-radius: 20px;
+
+    padding: 64px 80px;
+
+    overflow: hidden;
+}
+
+form.create-client-form fieldset {
+    border: 0;
+}
+
+form.create-client-form fieldset + fieldset {
+    margin-top: 80px;
+}
+
+form.create-client-form fieldset .map {
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+form.create-client-form fieldset legend {
+    width: 100%;
+
+    font-size: 32px;
+    line-height: 34px;
+    color: white;
+    font-weight: 700;
+
+    border-bottom: 1px solid #D3E2E5;
+    margin-bottom: 40px;
+    padding-bottom: 24px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form.create-client-form .input-block + .input-block {
+    margin-top: 24px;
+}
+
+form.create-client-form .input-block label {
+    display: flex;
+    color: white;
+    margin-bottom: 8px;
+    line-height: 24px;
+    padding-top: 20px;
+}
+
+form.create-client-form .input-block label span {
+    font-size: 14px;
+    color: white;
+    margin-left: 24px;
+    line-height: 24px;
+}
+
+form.create-client-form .input-block input,
+form.create-client-form .input-block textarea {
+    width: 100%;
+    background: #F5F8FA;
+    border: 1px solid #D3E2E5;
+    border-radius: 20px;
+    outline: none;
+    color: black;
+}
+
+form.create-client-form .input-block input {
+    height: 64px;
+    padding: 0 16px;
+}
+
+form.create-client-form #rua-numero {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+}
+
+form.create-client-form .input-block .rua {
+    min-width: 80%;
+}
+
+form.create-client-form .input-block .numero {
+    padding-left: 20px;
+    min-width: 20%;
+}
+
+form.create-client-form #cidade-uf {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+}
+
+form.create-client-form .input-block .cidade {
+    min-width: 80%;
+}
+
+form.create-client-form .input-block .uf {
+    padding-left: 20px;
+    min-width: 20%;
+}
+
+form.create-client-form .input-block .uf input {
+    text-align: center;
+}
+
+form.create-client-form .input-block .button-select {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+form.create-client-form .input-block .button-select button {
+    height: 64px;
+    background: #F5F8FA;
+    border: 1px solid #D3E2E5;
+    color: white;
+    cursor: pointer;
+}
+
+form.create-client-form .input-block .button-select button.active {
+    background: #EDFFF6;
+    border: 1px solid #A1E9C5;
+    color: #37C77F;
+}
+
+form.create-client-form .input-block .button-select button:first-child {
+    border-radius: 20px 0px 0px 20px;
+}
+
+form.create-client-form .input-block .button-select button:last-child {
+    border-radius: 0 20px 20px 0;
+    border-left: 0;
+}
+
+form.create-client-form button.confirm-button {
+    margin-top: 64px;
+
+    width: 100%;
+    height: 64px;
+    border: 0;
+    cursor: pointer;
+    background: #E87812;
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-weight: 800;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: background-color 0.2s;
+}
+
+form.create-client-form button.confirm-button svg {
+    margin-right: 16px;
+}
+
+form.create-client-form button.confirm-button:hover {
+    background: #AB400D;
+}

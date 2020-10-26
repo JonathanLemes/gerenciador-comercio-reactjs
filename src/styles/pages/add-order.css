@@ -1,0 +1,439 @@
+#page-client {
+  display: flex;
+  min-height: 100vh;
+
+  background-color: linear-gradient(329.54deg, #CA1D0D 0%, #D7220F 100%);
+  background: url('../../images/background.png')repeat;
+  animation: animation 180s linear infinite;
+}
+
+@keyframes animation {
+  100%{
+      background-position:+3000px 2500px;
+  }
+}
+
+#page-client main {
+  flex: 1;
+}
+
+.client-details {
+  width: 700px;
+  margin: 64px auto;
+
+  background: #B21100;
+  border: none;
+  border-radius: 20px;
+
+  overflow: hidden;
+}
+
+.loading {
+  width: 700px;
+  margin: 64px auto;
+
+  background: #B21100;
+  border: none;
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.loading {
+  padding: 20px;
+}
+
+.loading .pdf {
+  width: 100%;
+  height: 100%;
+
+  border: none;
+  border-radius: 20px;
+}
+
+.loading .pdf-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-bottom: 20px;
+}
+
+.loading .pdf-title svg {
+  margin-left: 10px;
+}
+
+.client-details > img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.client-details .images {
+  display: grid;
+  grid-template-columns: repeat(6 ,1fr);
+  column-gap: 16px;
+
+  margin: 16px 40px 0;
+}
+ 
+.client-details .images button {
+  border: 0;
+  height: 88px;
+  background: none;
+  cursor: pointer;
+  border-radius: 20px;
+  overflow: hidden;
+  outline: none;
+  
+  opacity: 0.6;
+}
+
+.client-details .images button.active {
+  opacity: 1;
+}
+
+.client-details .images button img {
+  width: 100%;
+  height: 88px;
+  object-fit: cover;
+  
+}
+
+.client-details .client-details-content {
+  padding: 80px;
+}
+
+.client-details .client-details-content h1 {
+  color: white;
+  font-size: 45px;
+  line-height: 54px;
+  margin-bottom: 8px;
+}
+
+.client-details .client-details-content p {
+  line-height: 28px;
+  color: white;
+  margin-top: 24px;
+  font-weight: 700;
+}
+
+.client-details .client-details-content .force-update {
+  visibility: hidden;
+}
+
+.client-details .client-details-content .map-container {
+  margin-top: 64px;
+  background-color: #E87812;
+  border: 1px solid #B3DAE2;
+  border-radius: 20px;
+
+  transition: background-color 0.2s;
+}
+
+.client-details .client-details-content .map-container:hover {
+  background-color: #AB400D;
+}
+
+.client-details .client-details-content .map-container footer:hover {
+  cursor: pointer;
+}
+
+.client-details .client-details-content .map-container footer {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.client-details .client-details-content .map-container footer a {
+  line-height: 24px;
+  color: white;
+  text-decoration: none;
+}
+
+.client-details .client-details-content .map-container .leaflet-container {
+  border-bottom: 1px solid #DDE3F0;
+  border-radius: 20px;
+}
+
+.client-details .client-details-content hr {
+  width: 100%;
+  height: 1px;
+  border: 0;
+  background: #D3E2E6;
+  margin: 64px 0;
+}
+
+.client-details .client-details-content h2 {
+  font-size: 36px;
+  line-height: 46px;
+  color: white;
+  padding-top: 24px;
+}
+
+.client-details .client-details-content .total-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 45px;
+  font-size: 24px;
+}
+
+.client-details .client-details-content .product-list {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.client-details .client-details-content .product-list .add-item {
+  width: 20px;
+  height: 20px;
+  background: #E87812;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: background-color 0.2s;
+}
+
+.client-details .client-details-content .product-list .add-item:hover {
+  cursor: pointer;
+  background: #AB400D;
+}
+
+.client-details .client-details-content .product-list .remove-item {
+  width: 20px;
+  height: 20px;
+  background: #E87812;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: background-color 0.2s;
+}
+
+.client-details .client-details-content .product-list .remove-item:hover {
+  cursor: pointer;
+  background: #AB400D;
+}
+
+.client-details .client-details-content .product-list .amount {
+  text-align: left;
+  padding-right: 4px;
+}
+
+.client-details .client-details-content .product-list .order {
+  display: hidden;
+}
+
+.client-details .client-details-content .open-details {
+  margin-top: 24px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+}
+
+.client-details .client-details-content .open-details div {
+  padding: 32px 24px;
+  border-radius: 20px;
+  line-height: 28px;
+}
+
+.client-details .client-details-content .open-details div svg {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.client-details .client-details-content .open-details div.hour {
+  background: linear-gradient(149.97deg, #E6F7FB 8.13%, #FFFFFF 92.67%);
+  border: 1px solid #B3DAE2;
+  color: white;
+}
+
+.client-details .client-details-content button.contact-button {
+  margin-top: 64px;
+
+  width: 100%;
+  height: 64px;
+  border: 0;
+  cursor: pointer;
+  background: #3CDC8C;
+  border-radius: 20px;
+  color: #FFFFFF;
+  font-weight: 800;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: background-color 0.2s;
+}
+
+.client-details .client-details-content button.contact-button svg {
+  margin-right: 16px;
+}
+
+.client-details .client-details-content button.contact-button:hover {
+  background: #36CF82;
+}
+
+.client-details .client-details-content .footer-buttons {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.client-details .client-details-content button.submit-order svg {
+  margin-left: 10px;
+}
+
+.client-details .client-details-content .footer-buttons .submit-order {
+  width: 200px;
+  height: 50px;
+  background: #E87812;
+  border-radius: 12px;
+  border: none;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: background-color 0.2s;
+}
+
+.client-details .client-details-content .footer-buttons .submit-order:hover {
+  cursor: pointer;
+  background: #AB400D;
+}
+
+.client-details .client-details-content .reserve-date {
+  width: 100%;
+  padding-top: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.client-details .client-details-content button.reserve-button svg {
+  margin-left: 10px;
+}
+
+.client-details .client-details-content .reserve-date .reserve-button {
+  width: 300px;
+  height: 50px;
+  background: #E87812;
+  border-radius: 12px;
+  border: none;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: background-color 0.2s;
+}
+
+.client-details .client-details-content .reserve-date .reserve-button:hover {
+  cursor: pointer;
+  background: #AB400D;
+}
+
+.MuiPaper-root {
+  background: #b21100 !important;
+  color: white !important;
+  font-family: "Nunito", Times, serif;
+}
+
+div[role="dialog"] {
+  border-radius: 20px;
+  padding: 10px;
+
+  color: white !important;
+  font-family: Nunito;
+}
+
+p {
+  color: white !important;
+  font-family: Nunito;
+}
+
+.MuiButton-label {
+  font-family: Nunito;
+  background: #E87812;
+  color: white !important;
+  border-radius: 12px;
+  border: none;
+  padding: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: background-color 0.2s;
+}
+
+.MuiButton-label:hover {
+  cursor: pointer;
+  background: #AB400D;
+}
+
+.MuiInputLabel-root {
+  color: white !important;
+  font-size: 20px !important;
+}
+
+.MuiInputBase-root {
+  color: white !important;
+}
+
+.input-block .button-select {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.input-block .button-select button {
+  height: 64px;
+  background: #AB400D;
+  border: 1px solid #E87812;
+  color: white;
+  cursor: pointer;
+}
+
+.input-block .button-select button.active {
+  background: #E87812;
+  border: 1px solid #E87812;
+  color: white;
+}
+
+.input-block .button-select button:first-child {
+  border-radius: 20px 0px 0px 20px;
+}
+
+.input-block .button-select button:last-child {
+  border-radius: 0 20px 20px 0;
+  border-left: 0;
+}
+
+.input-block .taxa-entrega-title {
+  padding: 20px;
+  padding-top: 40px;
+  font-size: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,67 @@
+#page-client {
+    display: flex;
+    min-height: 100vh;
+
+    background-color: linear-gradient(329.54deg, #CA1D0D 0%, #D7220F 100%);
+    background: url('../../images/background.png')repeat;
+    animation: animation 180s linear infinite;
+}
+
+@keyframes animation {
+    100%{
+        background-position:+3000px 2500px;
+    }
+}
+
+.order {
+    width: 900px;
+    margin: 64px auto;
+    padding: 20px;
+    padding-top: 60px;
+
+    background: #B21100;
+    border: none;
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.order .orders-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-bottom: 20px;
+}
+
+.order .orders-title svg {
+    margin-right: 10px;
+}
+
+.order .orders-table {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+}
+
+.order .orders-table thead {
+    cursor: pointer;
+}
+
+.order .orders-table input {
+    width: 100%;
+    padding: 5px;
+    padding-left: 10px;
+    margin: 10px;
+
+    background: #F5F8FA;
+    border: 1px solid #D3E2E5;
+    border-radius: 20px;
+    outline: none;
+    color: black;
+}
