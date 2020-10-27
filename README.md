@@ -7,10 +7,7 @@
 
 Gerenciador para comércios utilizando React JS e Firebase (Cloud Firestore), inicialmente desenvolvido para a <a href="https://www.instagram.com/ale_esquina.do.frango.guara/">Esquina do Frango</a>, de Guaratinguetá - SP. O projeto foi criado com base no app Happy, da <a href="https://nextlevelweek.com/">Next Level Week</a> #3, da <a href="https://rocketseat.com.br/">Rocketseat</a>.
 
-<video controls="true" allowfullscreen="true" poster="https://thumbs.gfycat.com/SatisfiedRemorsefulLhasaapso-mobile.jpg">
-    <source src="https://thumbs.gfycat.com/SatisfiedRemorsefulLhasaapso-mobile.mp4" type="video/mp4" />
-    <source src="https://giant.gfycat.com/SatisfiedRemorsefulLhasaapso.webm" type="video/webm" />
-</video>
+[![Landing](https://github.com/JonathanLemes/gerenciador-comercio-reactjs/tree/main/docs/Poster.png)](https://thumbs.gfycat.com/SatisfiedRemorsefulLhasaapso-mobile.mp4)
 
 ---
 
@@ -21,5 +18,5 @@ Gerenciador para comércios utilizando React JS e Firebase (Cloud Firestore), in
 ```bash
 yarn install
 ```
-3. <a href="https://github.com/JonathanLemes/gerenciador-comercio-reactjs/tree/main/src/docs/VariaveisDeAmbiente.md">Crie as variáveis de ambiente necessárias</a>.
-4. <a href="">Crie seu banco de dados Firebase Cloud Firestore</a>.
+1. <a href="https://github.com/JonathanLemes/gerenciador-comercio-reactjs/tree/main/docs/VariaveisDeAmbiente.md">Crie as variáveis de ambiente necessárias</a>.
+2. <a href="">Crie seu banco de dados Firebase Cloud Firestore</a>.
