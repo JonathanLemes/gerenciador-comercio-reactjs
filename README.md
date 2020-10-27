@@ -7,7 +7,7 @@
 
 Gerenciador para comércios utilizando React JS e Firebase (Cloud Firestore), inicialmente desenvolvido para a <a href="https://www.instagram.com/ale_esquina.do.frango.guara/">Esquina do Frango</a>, de Guaratinguetá - SP. O projeto foi criado com base no app Happy, da <a href="https://nextlevelweek.com/">Next Level Week</a> #3, da <a href="https://rocketseat.com.br/">Rocketseat</a>.
 
-[![Landing](https://github.com/JonathanLemes/gerenciador-comercio-reactjs/tree/main/docs/Poster.png)](https://thumbs.gfycat.com/SatisfiedRemorsefulLhasaapso-mobile.mp4)
+[![Landing](https://github.com/JonathanLemes/gerenciador-comercio-reactjs/tree/main/docs/images/oster.png)](https://thumbs.gfycat.com/SatisfiedRemorsefulLhasaapso-mobile.mp4)
 
 ---
 
