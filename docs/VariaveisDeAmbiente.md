@@ -16,7 +16,9 @@ Crie uma conta no <a href="https://firebase.google.com/">Firebase</a> e inicie u
 ## Passo 4: Adicione as variáveis de ambiente
 
 No arquivo *.env* criado no *Passo 1*, acrescente as variáveis dos passos 2 e 3, com os nomes *REACT_APP_MAPBOX_TOKEN* e *REACT_APP_FIREBASE_API_KEY*, conforme em:
+```
 REACT_APP_MAPBOX_TOKEN=*[CHAVE ADQUIRIDA NO PASSO 2]*
 REACT_APP_FIREBASE_API_KEY=*[CHAVE ADQUIRIDA NO PASSO 3]*
+```
 
 >**Nota:** As variáveis são adicionadas no ambiente por questões de segurança, portanto, o arquivo *.env* não é commitado ao Git conforme no <a href="https://github.com/JonathanLemes/gerenciador-comercio-reactjs/blob/main/.gitignore">.gitignore</a>. Caso deseje hospedar seu projeto, você pode adicionar as mesmas como variáveis de ambiente do servidor com os mesmos nomes.
